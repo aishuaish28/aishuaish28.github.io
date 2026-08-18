@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aiswarya George — Data Analyst | Excel · SQL · Power BI | Dubai UAE</title>
+<meta name="description" content="Data Analyst with 2 years' experience in customer, sales and operational analytics. Advanced Excel, Power Query, SQL, Power BI & DAX, VBA/Macros. Based in Dubai, available for immediate joining." />
+
+<meta property="og:title" content="Aiswarya George — Data Analyst | Excel · SQL · Power BI | Dubai UAE" />
+<meta property="og:description" content="KPI reporting, dashboard development & data validation across CRM, SAP and Oracle systems. Immediate joiner, Dubai UAE." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0A1122;
+    --bg-soft:#0D1730;
+    --panel:#101D3A;
+    --panel-2:#0E1930;
+    --border:#223257;
+    --border-soft:#1A2745;
+    --ink:#EEF2FA;
+    --ink-soft:#AAB6CC;
+    --ink-faint:#6E7C99;
+    --blue:#4C7EFF;
+    --blue-deep:#2E5BD8;
+    --blue-tint:rgba(76,126,255,.12);
+    --cyan:#39C6F0;
+    --gold:#E7B34C;
+    --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Inter', -apple-system, sans-serif;
+    --radius:6px;
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 520px at 82% -10%, rgba(76,126,255,.16), transparent 60%),
+      radial-gradient(900px 460px at 8% 8%, rgba(57,198,240,.08), transparent 55%),
+      linear-gradient(var(--bg) 0 0),
+      repeating-linear-gradient(to right, transparent 0 63px, var(--border-soft) 63px 64px),
+      repeating-linear-gradient(to bottom, transparent 0 63px, var(--border-soft) 63px 64px);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (max-width:720px){
+    body{
+      background:
+        radial-gradient(700px 400px at 90% -10%, rgba(76,126,255,.18), transparent 60%),
+        linear-gradient(var(--bg) 0 0),
+        repeating-linear-gradient(to right, transparent 0 39px, var(--border-soft) 39px 40px),
+        repeating-linear-gradient(to bottom, transparent 0 39px, var(--border-soft) 39px 40px);
+    }
+  }
+
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  @media (max-width:720px){ .wrap{padding:0 20px;} }
+
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--cyan); font-weight:600;
+  }
+  h1,h2,h3{ font-family:var(--serif); font-weight:500; margin:0; color:var(--ink); }
+  .mono{font-family:var(--mono);}
+
+  /* ---------- Formula-bar header ---------- */
+  header.fxbar{
+    position:sticky; top:0; z-index:50;
+    background:rgba(10,17,34,.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border-soft);
+  }
+  .fx-row{
+    display:flex; align-items:stretch; height:56px; max-width:var(--maxw); margin:0 auto; padding:0 32px;
+  }
+  .fx-cellref{
+    display:flex; align-items:center; gap:8px; padding:0 16px 0 0; border-right:1px solid var(--border-soft);
+    font-family:var(--mono); font-weight:600; font-size:14px; color:var(--cyan); white-space:nowrap;
+  }
+  .fx-cellref .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);display:inline-block;box-shadow:0 0 8px rgba(57,198,240,.7);}
+  .fx-icon{ display:flex; align-items:center; padding:0 14px; border-right:1px solid var(--border-soft); font-family:var(--serif); font-style:italic; font-size:15px; color:var(--ink-soft);}
+  .fx-input{
+    flex:1; display:flex; align-items:center; gap:22px; padding:0 18px; overflow:hidden;
+  }
+  .fx-input nav{display:flex; gap:22px; align-items:center; flex-wrap:nowrap;}
+  .fx-input nav a{
+    font-family:var(--mono); font-size:13px; color:var(--ink-soft); text-decoration:none; white-space:nowrap;
+    display:flex; gap:6px; align-items:baseline;
+  }
+  .fx-input nav a span{color:var(--ink-faint); font-size:11px;}
+  .fx-input nav a:hover{color:var(--ink);}
+  .fx-hire{ margin-left:auto; display:flex; align-items:center; }
+  .btn{
+    font-family:var(--mono); font-size:13px; font-weight:500; text-decoration:none;
+    padding:9px 16px; border-radius:var(--radius); border:1px solid var(--blue);
+    display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
+  }
+  .btn-solid{ background:var(--blue); color:#06122E; font-weight:600; }
+  .btn-solid:hover{ background:var(--cyan); border-color:var(--cyan); }
+  .btn-line{ background:transparent; color:var(--ink); border-color:var(--border); }
+  .btn-line:hover{ background:var(--blue-tint); border-color:var(--blue); }
+
+  .menu-toggle{display:none; background:none; border:1px solid var(--border); border-radius:var(--radius); width:38px; height:38px; align-items:center; justify-content:center; margin-left:auto; cursor:pointer;}
+  .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after{
+    content:""; display:block; width:16px; height:2px; background:var(--ink); position:relative;
+  }
+  .menu-toggle span::before{ position:absolute; top:-5px; }
+  .menu-toggle span::after{ position:absolute; top:5px; }
+
+  @media (max-width:880px){
+    .fx-input nav{ display:none; }
+    .fx-input.open nav{
+      display:flex; position:absolute; top:56px; left:0; right:0; background:var(--bg-soft);
+      flex-direction:column; gap:0; padding:6px 20px 16px; border-bottom:1px solid var(--border-soft);
+    }
+    .fx-input.open nav a{ padding:10px 0; border-bottom:1px dashed var(--border-soft); }
+    .fx-input.open nav .mobile-hire-link{
+      display:flex !important;
+      color:var(--cyan);
+      font-weight:600;
+    }
+    .fx-hire{ display:none; }
+    .menu-toggle{ display:flex; }
+  }
+
+  section{ padding:96px 0; border-bottom:1px solid var(--border-soft); position:relative; }
+  section:last-of-type{border-bottom:none;}
+  .section-head{ margin-bottom:48px; max-width:640px; }
+  .section-head .eyebrow{margin-bottom:10px; display:block;}
+  .section-head h2{ font-size:clamp(28px,3.4vw,40px); line-height:1.15; }
+  .section-head h2 em{font-style:italic; color:var(--cyan);}
+  .section-head p{ color:var(--ink-soft); margin-top:14px; font-size:16px; max-width:56ch;}
+
+  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- HERO ---------- */
+  #hero{ padding-top:64px; border-bottom:1px solid var(--border-soft); }
+  .hero-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; }
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr; gap:44px;} }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px;
+    padding:6px 12px; border:1px solid var(--blue); border-radius:20px; color:var(--ink);
+    background:var(--blue-tint);
+  }
+  .badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan); box-shadow:0 0 0 0 rgba(57,198,240,.5); animation:pulse 2s infinite;}
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(57,198,240,.45);} 70%{box-shadow:0 0 0 8px rgba(57,198,240,0);} 100%{box-shadow:0 0 0 0 rgba(57,198,240,0);} }
+
+  .hero-kicker{ font-family:var(--mono); font-size:13px; color:var(--ink-soft); margin-top:22px; letter-spacing:.02em;}
+  .hero h1{ font-size:clamp(40px,6vw,66px); line-height:1.03; margin-top:14px; }
+  .hero h1 em{ font-style:italic; color:var(--cyan); }
+  .hero-sub{ color:var(--ink-soft); font-size:17px; max-width:52ch; margin-top:22px; }
+  .hero-sub strong{color:var(--ink);}
+  .hero-ctas{ display:flex; gap:14px; margin-top:32px; flex-wrap:wrap; }
+
+  /* photo panel */
+  .photo-wrap{ position:relative; max-width:400px; margin:0 auto; }
+  .photo-card{
+    border-radius:14px; overflow:hidden; border:1px solid var(--border);
+    box-shadow:0 30px 70px -30px rgba(0,0,0,.7), 0 0 0 1px rgba(76,126,255,.05);
+    position:relative;
+    aspect-ratio: 4/5;
+  }
+  .photo-card img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.02) contrast(1.02); }
+  .photo-card::after{
+    content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 55%, rgba(10,17,34,.65) 100%);
+    pointer-events:none;
+  }
+  .float-badge{
+    position:absolute; bottom:-18px; left:-18px; background:var(--panel); border:1px solid var(--border);
+    border-radius:10px; padding:12px 16px; box-shadow:0 20px 45px -18px rgba(0,0,0,.6);
+    display:flex; align-items:center; gap:10px;
+  }
+  .float-badge .fv{ font-family:var(--mono); font-size:20px; font-weight:600; color:var(--cyan); }
+  .float-badge .fl{ font-size:11.5px; color:var(--ink-soft); line-height:1.25; }
+  .float-tag{
+    position:absolute; top:16px; right:16px; background:rgba(10,17,34,.72); backdrop-filter:blur(6px);
+    border:1px solid var(--border); border-radius:20px; padding:6px 12px; font-family:var(--mono); font-size:11px; color:var(--ink);
+  }
+
+  /* KPI strip below hero */
+  .kpi-strip{ margin-top:64px; }
+  .kpi-grid{ display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--border); border-radius:8px; overflow:hidden; background:var(--panel-2); }
+  @media (max-width:800px){ .kpi-grid{grid-template-columns:1fr 1fr;} }
+  .kpi-cell{ padding:24px 22px; border-right:1px solid var(--border); position:relative; overflow:hidden; }
+  .kpi-cell:last-child{border-right:none;}
+  @media (max-width:800px){ .kpi-cell:nth-child(2n){border-right:none;} .kpi-cell:nth-child(-n+2){border-bottom:1px solid var(--border);} }
+  .kpi-ref{ font-family:var(--mono); font-size:11px; color:var(--ink-faint); }
+  .kpi-val{ font-family:var(--mono); font-size:30px; font-weight:600; color:var(--ink); margin-top:6px; }
+  .kpi-label{ font-size:12.5px; color:var(--ink-soft); margin-top:4px; }
+  .kpi-bar{ position:absolute; left:0; bottom:0; height:3px; background:linear-gradient(90deg, var(--blue), var(--cyan)); }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{ display:grid; grid-template-columns:1.3fr .9fr; gap:56px; }
+  @media (max-width:880px){ .about-grid{grid-template-columns:1fr;} }
+  .about-copy p{ color:var(--ink-soft); font-size:16.5px; margin:0 0 18px; }
+  .about-copy p strong{ color:var(--ink); }
+  .toolkit{ margin-top:28px; }
+  .toolkit-title{ font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); margin-bottom:12px; }
+  .pillrow{ display:flex; flex-wrap:wrap; gap:8px; }
+  .pill{
+    font-family:var(--mono); font-size:12.5px; padding:6px 11px; border:1px solid var(--border);
+    border-radius:20px; color:var(--ink-soft); background:var(--panel-2);
+  }
+
+  .ledger{ background:var(--panel); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .ledger-row{ display:flex; justify-content:space-between; gap:12px; padding:14px 18px; border-bottom:1px solid var(--border-soft); font-size:14px; }
+  .ledger-row:last-child{border-bottom:none;}
+  .ledger-row .k{ font-family:var(--mono); color:var(--ink-faint); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  .ledger-row .v{ text-align:right; color:var(--ink); font-weight:500; }
+
+  /* ---------- EXPERIENCE ---------- */
+  .exp-row{ display:grid; grid-template-columns:200px 1fr; gap:32px; padding:32px 0; border-top:1px solid var(--border-soft); }
+  .exp-row:last-child{border-bottom:1px solid var(--border-soft);}
+  @media (max-width:720px){ .exp-row{grid-template-columns:1fr; gap:10px;} }
+  .exp-meta{ font-family:var(--mono); font-size:13px; color:var(--ink-soft); }
+  .exp-meta .dates{ color:var(--cyan); font-weight:600; }
+  .exp-meta .loc{ color:var(--ink-faint); margin-top:4px; }
+  .exp-role{ font-size:20px; font-family:var(--serif); color:var(--ink); }
+  .exp-co{ font-family:var(--mono); font-size:13px; color:var(--ink-soft); margin-top:2px; margin-bottom:14px; display:block;}
+  .exp-bullets{ margin:0; padding-left:18px; color:var(--ink-soft); font-size:15px; }
+  .exp-bullets li{ margin-bottom:9px; }
+  .exp-bullets strong{ color:var(--ink); }
+
+  /* ---------- HIGHLIGHTS ---------- */
+  .hl-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media (max-width:960px){ .hl-grid{grid-template-columns:1fr;} }
+  .hl-card{ background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:26px 24px; display:flex; flex-direction:column; gap:14px; }
+  .hl-top{ display:flex; align-items:center; justify-content:space-between; }
+  .hl-ref{ font-family:var(--mono); font-size:12px; color:var(--cyan); background:var(--blue-tint); padding:3px 8px; border-radius:4px; }
+  .hl-co{ font-family:var(--mono); font-size:11.5px; color:var(--ink-faint); }
+  .hl-card h3{ font-size:19px; line-height:1.3; }
+  .hl-block{ font-size:14px; color:var(--ink-soft); }
+  .hl-block b{ display:block; font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-faint); margin-bottom:4px; font-weight:600; }
+  .hl-tags{ display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:8px; }
+  .hl-tags span{ font-family:var(--mono); font-size:11px; color:var(--ink-soft); background:var(--panel-2); border:1px solid var(--border-soft); padding:4px 8px; border-radius:3px; }
+
+  /* ---------- SKILLS ---------- */
+  .skill-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  @media (max-width:880px){ .skill-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .skill-grid{grid-template-columns:1fr;} }
+  .skill-cell{ background:var(--panel); padding:24px; }
+  .skill-cell h3{ font-size:14px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.04em; color:var(--cyan); margin-bottom:14px; font-weight:600; }
+  .skill-cell .pillrow .pill{ background:var(--panel-2); border-color:var(--border-soft); }
+
+  /* ---------- CERTS / EDUCATION ---------- */
+  .cred-grid{ display:grid; grid-template-columns:1.2fr .8fr; gap:40px; }
+  @media (max-width:880px){ .cred-grid{grid-template-columns:1fr;} }
+  .cert-list{ display:flex; flex-direction:column; gap:1px; background:var(--border); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .cert-item{ background:var(--panel); padding:16px 18px; display:flex; gap:14px; align-items:flex-start; }
+  .cert-mark{ font-family:var(--mono); font-size:12px; color:#06122E; background:var(--cyan); width:26px; height:26px; border-radius:4px; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; font-weight:700; }
+  .cert-item .t{ font-size:14.5px; color:var(--ink); }
+  .cert-item .s{ font-family:var(--mono); font-size:12px; color:var(--ink-faint); margin-top:2px; }
+
+  .edu-card{ background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:22px; margin-bottom:16px; }
+  .edu-card .deg{ font-family:var(--serif); font-size:17px; }
+  .edu-card .sc{ font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); margin-top:4px; }
+  .lang-row{ margin-top:20px; font-family:var(--mono); font-size:13px; color:var(--ink-soft); }
+  .lang-row b{color:var(--ink);}
+
+  /* ---------- CONTACT ---------- */
+  #contact{ text-align:center; }
+  #contact .section-head{ margin-left:auto; margin-right:auto; text-align:center; }
+  .contact-panel{
+    background:linear-gradient(160deg, #12224A, #0B1530); border:1px solid var(--border);
+    border-radius:12px; padding:56px 40px; display:flex; flex-direction:column; align-items:center; gap:22px;
+  }
+  .contact-panel h2{ color:var(--ink); font-size:clamp(26px,3.5vw,38px); max-width:22ch; }
+  .contact-panel p{ color:var(--ink-soft); max-width:56ch; }
+  .contact-formula{
+    font-family:var(--mono); font-size:14px; background:rgba(76,126,255,.08); border:1px solid var(--border);
+    padding:14px 20px; border-radius:6px; color:var(--ink);
+  }
+  .contact-formula span{ color:var(--gold); }
+  .mobile-hire-link{display:none !important;}
+  .contact-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:6px; }
+  .contact-links a{
+    font-family:var(--mono); font-size:13px; text-decoration:none; color:var(--ink);
+    border:1px solid var(--border); padding:10px 16px; border-radius:20px;
+  }
+  .contact-links a:hover{ background:var(--blue-tint); border-color:var(--blue); }
+  .avail-row{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; margin-top:14px; font-family:var(--mono); font-size:12px; color:var(--ink-soft);}
+
+  footer{ padding:34px 0; }
+  .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; font-family:var(--mono); font-size:12.5px; color:var(--ink-faint); }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{transition:none; opacity:1; transform:none;}
+    .badge .pulse{animation:none;}
+  }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--cyan); outline-offset:2px; }
+</style>
+</head>
+<body>
+
+<header class="fxbar">
+  <div class="fx-row">
+    <div class="fx-cellref"><span class="dot"></span>A1</div>
+    <div class="fx-icon">ƒx</div>
+    <div class="fx-input" id="fxInput">
+      <nav>
+        <a href="#about"><span>A2</span>About</a>
+        <a href="#experience"><span>A3</span>Experience</a>
+        <a href="#highlights"><span>A4</span>Highlights</a>
+        <a href="#skills"><span>A5</span>Skills</a>
+        <a href="#credentials"><span>A6</span>Credentials</a>
+        <a href="#contact"><span>A7</span>Contact</a>
+        <a class="mobile-hire-link"
+           href="mailto:aiswarya286799@gmail.com?subject=Data%20Analyst%20Opportunity%20-%20Aiswarya%20George&body=Hello%20Aiswarya%2C%0A%0AI%20would%20like%20to%20discuss%20a%20Data%20Analyst%20opportunity%20with%20you.%0A%0ARegards%2C">
+           <span>A8</span>Hire Me →
+        </a>
+      </nav>
+    </div>
+    <div class="fx-hire">
+      <a class="btn btn-solid"
+   href="mailto:aiswarya286799@gmail.com?subject=Data%20Analyst%20Opportunity%20-%20Aiswarya%20George&body=Hello%20Aiswarya%2C%0A%0AI%20would%20like%20to%20discuss%20a%20Data%20Analyst%20opportunity%20with%20you.%0A%0ARegards%2C"
+   aria-label="Email Aiswarya George about a Data Analyst opportunity">
+   Hire Me →
+</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero">
+
+  <div class="wrap hero-grid">
+
+    <!-- LEFT SIDE -->
+    <div>
+
+      <span class="badge">
+        <span class="pulse"></span>
+        Available · Immediate Joiner · Dubai, UAE
+      </span>
+
+      <div class="hero-kicker">
+        DATA ANALYST · ADVANCED EXCEL &amp; POWER QUERY · SQL · POWER BI · DAX · VBA
+      </div>
+
+      <h1>
+        Aiswarya <em>George</em>
+      </h1>
+
+      <p class="hero-sub">
+        Data Analyst with nearly <strong>2 years</strong> of experience
+        turning customer, sales and operational data into
+        <strong>KPI reports and dashboards</strong> — built on advanced
+        Excel, SQL and Power BI, and kept accurate to
+        <strong>99%+</strong>.
+      </p>
+
+      <div class="hero-ctas">
+
+        <a class="btn btn-solid" href="#experience">
+          View My Work
+        </a>
+
+        <a 
+          class="btn btn-line"
+          href="./Aiswarya_George_Data%20Analyst_1.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          Resume ↗
+        </a>
+
+        <a 
+          class="btn btn-line"
+          href="https://www.linkedin.com/in/aiswaryageorge28/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn ↗
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE / PHOTO -->
+    <div class="reveal">
+
+      <div class="photo-wrap">
+
+        <div class="photo-card">
+
+          <img
+            src="./profile.jpg"
+            alt="Aiswarya George - Data Analyst"
+            class="profile-photo"
+          />
+
+          <div class="float-tag">
+            Dubai, UAE
+          </div>
+
+        </div>
+
+        <div class="float-badge">
+
+          <div class="fv">
+            99%
+          </div>
+
+          <div class="fl">
+            Data accuracy<br>
+            maintained
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- KPI STRIP -->
+  <div class="wrap kpi-strip reveal">
+
+    <div class="kpi-grid">
+
+      <div class="kpi-cell">
+        <div class="kpi-ref">D4</div>
+        <div class="kpi-val">99%</div>
+        <div class="kpi-label">
+          Data accuracy maintained
+        </div>
+        <div class="kpi-bar" style="width:95%"></div>
+      </div>
+
+
+      <div class="kpi-cell">
+        <div class="kpi-ref">E4</div>
+        <div class="kpi-val">150+</div>
+        <div class="kpi-label">
+          MIS &amp; Power BI reports delivered
+        </div>
+        <div class="kpi-bar" style="width:80%"></div>
+      </div>
+
+
+      <div class="kpi-cell">
+        <div class="kpi-ref">D5</div>
+        <div class="kpi-val">100+</div>
+        <div class="kpi-label">
+          Qualified leads, 100% pipeline growth
+        </div>
+        <div class="kpi-bar" style="width:70%"></div>
+      </div>
+
+
+      <div class="kpi-cell">
+        <div class="kpi-ref">E5</div>
+        <div class="kpi-val">50%</div>
+        <div class="kpi-label">
+          Faster document retrieval
+        </div>
+        <div class="kpi-bar" style="width:50%"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+        
+        
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:28px;">
+          <span class="eyebrow">A2 · About</span>
+          <h2>Numbers that hold up  <em>under scrutiny.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>I'm a Data Analyst who came up through <strong>statistics</strong>, not shortcuts — an M.Sc. in Statistics grounds how I approach every report, from a single VLOOKUP to a full Power BI model.</p>
+          <p>Across <strong>Al Areej General Trading</strong>, <strong>Mykare Health</strong> and <strong>iDatalytics</strong>, I've built MIS and management reports, reconciled data across <strong>SAP, Oracle and CRM</strong> systems, and automated the reporting work that used to eat a week — while holding <strong>99%+ data accuracy</strong> throughout.</p>
+          <p>I like the part of analytics most people skip: cleaning the data until the dashboard doesn't need caveats. Whether it's a Power Query refresh, a DAX measure, or a VBA macro that saves an afternoon, I care about the report a stakeholder can trust without asking "where did this number come from?"</p>
+        </div>
+        <div class="toolkit">
+          <div class="toolkit-title">Core Toolkit</div>
+          <div class="pillrow">
+            <span class="pill">Advanced Excel</span>
+            <span class="pill">Power Query</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">DAX</span>
+            <span class="pill">VBA / Macros</span>
+            <span class="pill">Power Automate</span>
+            <span class="pill">SAP</span>
+            <span class="pill">Oracle</span>
+            <span class="pill">Tableau</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="ledger">
+          <div class="ledger-row"><span class="k">Location</span><span class="v">Dubai, UAE</span></div>
+          <div class="ledger-row"><span class="k">Status</span><span class="v">Visit Visa · Immediate Joining</span></div>
+          <div class="ledger-row"><span class="k">Experience</span><span class="v">~2 Years</span></div>
+          <div class="ledger-row"><span class="k">Education</span><span class="v">M.Sc. Statistics</span></div>
+          <div class="ledger-row"><span class="k">Languages</span><span class="v">English, Malayalam</span></div>
+          <div class="ledger-row"><span class="k">Email</span><span class="v">aiswarya286799@gmail.com</span></div>
+          <div class="ledger-row"><span class="k">Phone</span><span class="v">+971 56 335 5490</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A3 · Experience</span>
+        <h2>Where the reports  <em>had to be right.</em></h2>
+        <p>Three roles, one thread: cleaning messy source data down to numbers people could act on.</p>
+      </div>
+
+      <div class="exp-row reveal">
+        <div class="exp-meta">
+          <div class="dates">Mar 2026 – Jul 2026</div>
+          <div class="loc">Dubai, UAE</div>
+        </div>
+        <div>
+          <div class="exp-role">Data Analyst cum Sales Executive</div>
+          <span class="exp-co">Al Areej General Trading LLC</span>
+          <ul class="exp-bullets">
+            <li>Analyzed customer, sales and campaign data across CRM systems for <strong>15+ business clients</strong>, tracking pipeline performance for forecasting and ROI analysis.</li>
+            <li>Generated <strong>100+ qualified leads</strong> through targeted outreach and referrals, contributing to a <strong>100% increase</strong> in active pipeline.</li>
+            <li>Maintained <strong>99% data accuracy</strong> across CRM lead, opportunity and client-interaction records.</li>
+            <li>Managed end-to-end customer engagement from prospecting to closing, achieving <strong>100% client retention</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-row reveal">
+        <div class="exp-meta">
+          <div class="dates">Feb 2025 – Jan 2026</div>
+          <div class="loc">Kerala, India</div>
+        </div>
+        <div>
+          <div class="exp-role">Junior Data Analyst</div>
+          <span class="exp-co">Mykare Health</span>
+          <ul class="exp-bullets">
+            <li>Delivered <strong>100+ recurring MIS reports and Power BI dashboards</strong> for KPI and trend tracking, from multi-source operational and customer data.</li>
+            <li>Built advanced Excel solutions — Pivot Tables, XLOOKUP/INDEX-MATCH, SUMIFS/COUNTIFS, Power Query, VBA/Macros — with dashboard automation.</li>
+            <li>Wrote <strong>SQL</strong> queries with advanced JOINs and CTEs to extract and reconcile data from <strong>Oracle</strong>.</li>
+            <li>Developed <strong>Power BI dashboards and DAX measures</strong> for KPI tracking and management reporting.</li>
+            <li>Automated reporting workflows with <strong>Power Automate</strong> and Excel VBA, cutting manual processing.</li>
+            <li>Processed <strong>50+ records/week</strong> at 99% accuracy; redesigned filing with version control, cutting retrieval time by <strong>50%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-row reveal">
+        <div class="exp-meta">
+          <div class="dates">Jul 2024 – Oct 2024</div>
+          <div class="loc">India</div>
+        </div>
+        <div>
+          <div class="exp-role">Intern Data Analyst</div>
+          <span class="exp-co">iDatalytics</span>
+          <ul class="exp-bullets">
+            <li>Entered and validated <strong>100+ sales, customer and purchase records</strong> in database and CRM systems at <strong>100% accuracy</strong>.</li>
+            <li>Generated <strong>50+ MIS reports and dashboards</strong> using Excel and Power BI, applying Pivot Tables and Power Query.</li>
+            <li>Redesigned document-control processes with standardized, version-controlled practices, reducing filing errors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A4 · Highlights</span>
+        <h2>Real problems, <em>real reconciliation.</em></h2>
+        <p>Three snapshots of the reporting and data-quality work behind those numbers.</p>
+      </div>
+
+      <div class="hl-grid">
+        <div class="hl-card reveal">
+          <div class="hl-top"><span class="hl-ref">B2</span><span class="hl-co">Al Areej General Trading</span></div>
+          <h3>CRM Data Integrity &amp; Pipeline Analytics</h3>
+          <div class="hl-block"><b>Problem</b>Sales and campaign data for 15+ clients was scattered across CRM records with no consistent tracking for forecasting or ROI.</div>
+          <div class="hl-block"><b>Approach</b>Standardized lead, opportunity and client-interaction tracking; ran targeted outreach and pipeline reviews.</div>
+          <div class="hl-block"><b>Result</b>99% data accuracy, 100+ qualified leads, 100% pipeline growth, 100% client retention.</div>
+          <div class="hl-tags"><span>CRM</span><span>Excel</span><span>Pipeline Analysis</span><span>ROI Tracking</span></div>
+        </div>
+
+        <div class="hl-card reveal">
+          <div class="hl-top"><span class="hl-ref">B3</span><span class="hl-co">Mykare Health</span></div>
+          <h3>MIS &amp; Power BI Reporting Automation</h3>
+          <div class="hl-block"><b>Problem</b>Recurring MIS reports were manually compiled from Oracle, SAP and CRM sources — slow, repetitive, error-prone.</div>
+          <div class="hl-block"><b>Approach</b>Built Power BI dashboards and DAX measures, reconciled data with SQL (JOINs/CTEs), automated workflows with Power Automate and VBA.</div>
+          <div class="hl-block"><b>Result</b>100+ reports delivered, 50+ records/week at 99% accuracy, 50% faster retrieval, insights shared with 20+ stakeholders.</div>
+          <div class="hl-tags"><span>Power BI</span><span>DAX</span><span>SQL</span><span>VBA</span><span>Power Automate</span></div>
+        </div>
+
+        <div class="hl-card reveal">
+          <div class="hl-top"><span class="hl-ref">B4</span><span class="hl-co">iDatalytics</span></div>
+          <h3>Data Entry, Validation &amp; Reporting</h3>
+          <div class="hl-block"><b>Problem</b>Sales, customer and purchase records needed accurate entry and usable reporting for the business to act on.</div>
+          <div class="hl-block"><b>Approach</b>Validated 100+ records into database/CRM systems; built MIS reports and dashboards with Pivot Tables and Power Query.</div>
+          <div class="hl-block"><b>Result</b>100% entry accuracy, 50+ MIS reports/dashboards, fewer filing errors after process redesign.</div>
+          <div class="hl-tags"><span>Excel</span><span>Power Query</span><span>Pivot Tables</span><span>CRM</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A5 · Skills</span>
+        <h2>The full <em>reporting stack.</em></h2>
+      </div>
+      <div class="skill-grid reveal">
+        <div class="skill-cell">
+          <h3>Data Analytics</h3>
+          <div class="pillrow">
+            <span class="pill">KPI Monitoring</span><span class="pill">MIS Reporting</span><span class="pill">Campaign Analysis</span><span class="pill">Trend Analysis</span><span class="pill">ROI Tracking</span><span class="pill">Forecasting Support</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <h3>Advanced Excel</h3>
+          <div class="pillrow">
+            <span class="pill">Pivot Tables</span><span class="pill">XLOOKUP / VLOOKUP</span><span class="pill">INDEX-MATCH</span><span class="pill">SUMIFS / COUNTIFS</span><span class="pill">Power Query</span><span class="pill">VBA / Macros</span><span class="pill">Conditional Formatting</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <h3>SQL &amp; Databases</h3>
+          <div class="pillrow">
+            <span class="pill">Advanced JOINs</span><span class="pill">CTEs</span><span class="pill">Filtering &amp; Aggregation</span><span class="pill">Data Reconciliation</span><span class="pill">Oracle</span><span class="pill">CRM Data</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <h3>Power BI &amp; DAX</h3>
+          <div class="pillrow">
+            <span class="pill">Dashboards</span><span class="pill">DAX Measures</span><span class="pill">Data Modeling</span><span class="pill">Drill-through Reports</span><span class="pill">Interactive Reporting</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <h3>Automation &amp; Tools</h3>
+          <div class="pillrow">
+            <span class="pill">Power Automate</span><span class="pill">SAP</span><span class="pill">Tableau</span><span class="pill">Superset</span><span class="pill">Google Analytics</span><span class="pill">Google Sheets</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <h3>Data Quality &amp; Collaboration</h3>
+          <div class="pillrow">
+            <span class="pill">Data Validation</span><span class="pill">Accuracy &amp; Integrity</span><span class="pill">Reporting Calendars</span><span class="pill">Version Control</span><span class="pill">Stakeholder Comms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A6 · Credentials</span>
+        <h2>Certified. <em>Statistically grounded.</em></h2>
+      </div>
+      <div class="cred-grid">
+        <div class="cert-list reveal">
+          <div class="cert-item"><span class="cert-mark">✓</span><div><div class="t">AI – Data Scientist</div><div class="s">NASSCOM</div></div></div>
+          <div class="cert-item"><span class="cert-mark">✓</span><div><div class="t">Python for Data Science, AI &amp; Development</div><div class="s">IBM · Coursera</div></div></div>
+          <div class="cert-item"><span class="cert-mark">✓</span><div><div class="t">SQL for Data Science with Python</div><div class="s">IBM · Coursera</div></div></div>
+          <div class="cert-item"><span class="cert-mark">✓</span><div><div class="t">Data Science Methodology</div><div class="s">IBM · Coursera</div></div></div>
+        </div>
+        <div class="reveal">
+          <div class="edu-card">
+            <div class="deg">M.Sc. Statistics</div>
+            <div class="sc">Mahatma Gandhi University · 2022</div>
+          </div>
+          <div class="edu-card">
+            <div class="deg">B.Sc. Mathematics</div>
+            <div class="sc">Mahatma Gandhi University · 2020</div>
+          </div>
+          <div class="lang-row"><b>Languages</b> — English (Professional), Malayalam (Native)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A7 · Contact</span>
+        <h2>Open to <em>Dubai opportunities.</em></h2>
+      </div>
+      <div class="contact-panel reveal">
+        <h2>Let's talk about your reporting stack.</h2>
+        <p>Actively seeking Data Analyst roles in Dubai and across the UAE — Excel, SQL, Power BI and dashboard automation, ready from day one.</p>
+        <div class="contact-formula">
+  <span>OPEN TO WORK</span> · Data Analyst Opportunities · Dubai, UAE
+</div>
+        <div class="contact-links">
+          <a href="mailto:aiswarya286799@gmail.com?subject=Data%20Analyst%20Opportunity%20-%20Aiswarya%20George&body=Hello%20Aiswarya%2C%0A%0AI%20would%20like%20to%20discuss%20a%20Data%20Analyst%20opportunity%20with%20you.%0A%0ARegards%2C"
+   aria-label="Email Aiswarya George">✉ aiswarya286799@gmail.com</a>
+          <a href="tel:+971563355490">☎ +971 56 335 5490</a>
+          <a href="https://www.linkedin.com/in/aiswaryageorge28/" target="_blank" rel="noopener">in/aiswaryageorge28 →</a>
+        </div>
+        <div class="avail-row">
+          <span>Visit Visa · Dubai, UAE</span><span>·</span><span>Available Immediately</span><span>·</span><span>English / Malayalam</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Aiswarya George</span>
+    <span>Data tells a story. I make it reconcile.</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const fxInput = document.getElementById('fxInput');
+  toggle.addEventListener('click', () => fxInput.classList.toggle('open'));
+  fxInput.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => fxInput.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
